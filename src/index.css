@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Poignée de la barre de défilement */
+::-webkit-scrollbar-thumb {
+  background-color: #4ac06b;
+  border-radius: 4px;
+}
+
+/* Fond de la barre de défilement */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+nav {
+  background-color: rgba(164, 213, 164, 0.1);
+}
+
+#home {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 160, 65, 0.8),
+      rgba(30, 230, 110, 0.8)
+    ),
+    url("./assets/images/carte-du-monde.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#app-container {
+  background-color: #ebfcee;
+}
+
+#sponsors {
+  background-color: rgba(164, 213, 164, 0.1);
+}
+
+header {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 160, 65, 0.8),
+      rgba(30, 230, 110, 0.8)
+    ),
+    url("./assets/images/carte-du-monde.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#logo-home {
+  animation: opacity 1s ease-in-out;
+  -webkit-animation: opacity 1s ease-in-out;
+}
+
+#titre-home {
+  animation: opacity 1s ease-in-out;
+  -webkit-animation: opacity 1s ease-in-out;
+}
+
+#btn-home {
+  animation: opacity 1s ease-in-out;
+  -webkit-animation: opacity 1s ease-in-out;
+}
+
+#footer-home {
+  animation: opacity 1s ease-in-out;
+  -webkit-animation: opacity 1s ease-in-out;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
