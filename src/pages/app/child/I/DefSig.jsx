@@ -9,7 +9,6 @@ import {
   FolderSpecialOutlined,
   SearchOutlined,
 } from "@mui/icons-material";
-import Footer from "../../../../components/Footer";
 
 function DefSig() {
   return (
@@ -615,10 +614,6 @@ function DefSig() {
               <ArrowRightOutlined sx={{ fontSize: 30 }} />
             </NavLink>
           </div>
-        </div>
-
-        <div>
-          <Footer />
         </div>
       </div>
     </div>
