@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "../../../components/Footer";
 
 function PriseEnMain() {
   return (
@@ -9,6 +10,9 @@ function PriseEnMain() {
       </h4>
       <div>
         <Outlet />
+      </div>
+      <div>
+        <Footer />
       </div>
     </section>
   );
