@@ -5,9 +5,7 @@ import Footer from "../../../components/Footer";
 function Georeferencement() {
   return (
     <section>
-      <h4 className="tracking-[1.2px] text-2xl mb-4 text-blue-500 font-normal">
-        IV. Géoréférencement
-      </h4>
+      <h4 className="titre-primary">IV. Géoréférencement</h4>
       <div>
         <Outlet />
       </div>
