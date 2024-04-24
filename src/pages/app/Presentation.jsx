@@ -234,7 +234,7 @@ function Presentation() {
               text-white rounded-lg text-semibold border border-green-500
               hover:bg-white hover:text-green-500 transition-all duration-200"
             >
-              👉 C'est parti 👉
+              C'est parti 👉
             </Link>
           </div>
 
