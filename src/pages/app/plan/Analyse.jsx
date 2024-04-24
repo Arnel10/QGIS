@@ -5,9 +5,7 @@ import Footer from "../../../components/Footer";
 function Analyse() {
   return (
     <section>
-      <h4 className="tracking-[1.2px] text-2xl mb-4 text-blue-500 font-normal">
-        IX. Analyse spatiale
-      </h4>
+      <h4 className="titre-primary">IX. Analyse spatiale</h4>
       <div>
         <Outlet />
       </div>

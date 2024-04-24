@@ -13,7 +13,7 @@ function Home() {
       </div>
       <div
         id="titre-home"
-        className="flex flex-col justify-center items-center my-36 gap-10"
+        className="flex flex-col justify-center items-center my-28 gap-10"
       >
         <h1 className="text-6xl uppercase text-slate-50 font-semibold font-nunito">
           Bienvenue sur

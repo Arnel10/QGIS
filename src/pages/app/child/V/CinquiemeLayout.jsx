@@ -6,7 +6,7 @@ import PushPinOutlinedIcon from "@mui/icons-material/PushPinOutlined";
 function CinquiemeLayout() {
   return (
     <div>
-      <p className="tracking-[1px] text-gray-700 my-4">
+      <p className="paragraphe">
         La numérisation consiste à « dessiner » par exemple les contours de
         parcelles en se basant sur une couche déjà existante, ordinairement un
         raster. On obtient ainsi une couche vecteur, plus facilement
@@ -15,21 +15,18 @@ function CinquiemeLayout() {
         intéressent. Il est ensuite possible de lier des données attributaires à
         cette couche.
       </p>
-      <p className="tracking-[1px] text-gray-700 my-4">
+      <p className="paragraphe">
         Dans ce chapitre, nous allons numériser des données de la carte de l'île
         d'Oahu (Hawaii) de 1902 (source :{" "}
-        <Link
-          to="#"
-          className="text-blue-500 hover:text-blue-600 hover:underline"
-        >
+        <Link to="#" className="lien">
           Wikimedia
         </Link>{" "}
         ) géoréférencée dans le chapitre précédent. Si vous ne l'avez pas
         géoréférencée, pas de problème : elle est inclue dans les données du
         chapitre.
       </p>
-      <p className="tracking-[1px] text-gray-700 my-4">Notions abordées :</p>
-      <ul className="tracking-[1px] text-gray-700 my-4 ml-10">
+      <p className="paragraphe">Notions abordées :</p>
+      <ul className="paragraphe ml-10">
         <li className="my-2">
           <PushPinOutlinedIcon />
           Création d'une couche vide
@@ -47,25 +44,16 @@ function CinquiemeLayout() {
           Notions de topologie
         </li>
       </ul>
-      <p className="tracking-[1px] text-gray-700 my-4">
+      <p className="paragraphe">
         Les données pour cette partie ainsi qu'une version PDF du tutoriel sont
         accessibles dans la rubrique :{" "}
-        <NavLink
-          to="/app/telechargement"
-          className="text-blue-500 hover:text-blue-600 hover:underline"
-        >
+        <NavLink to="/app/telechargement" className="lien">
           téléchargement.
         </NavLink>
       </p>
 
       <div className="flex justify-end items-center py-5">
-        <NavLink
-          className="text-white text-xl flex items-center
-transition-all duration-200 font-semibold font-nunito 
-tracking-[1px] border border-green-500 px-2 py-1 
-rounded-md bg-green-500 hover:bg-slate-50 hover:text-green-500
-"
-        >
+        <NavLink className="btn-lien">
           Démarrer <ArrowRightOutlinedIcon sx={{ fontSize: 30 }} />
         </NavLink>
       </div>

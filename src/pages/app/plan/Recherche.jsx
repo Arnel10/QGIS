@@ -5,9 +5,7 @@ import Footer from "../../../components/Footer";
 function Recherche() {
   return (
     <section>
-      <h4 className="tracking-[1.2px] text-2xl mb-4 text-blue-500 font-normal">
-        III. Recherche et ajout de données
-      </h4>
+      <h4 className="titre-primary">III. Recherche et ajout de données</h4>
       <div>
         <Outlet />
       </div>
