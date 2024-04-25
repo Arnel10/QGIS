@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer";
 function Automatisation() {
   return (
     <section>
-      <h4 className="titre-secondary">XI. Automatisation de traitements</h4>
+      <h4 className="titre-primary">XI. Automatisation de traitements</h4>
       <div>
         <Outlet />
       </div>

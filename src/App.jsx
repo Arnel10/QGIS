@@ -99,6 +99,7 @@ function App() {
           <Route path="presentation" element={<Presentation />} />
 
           <Route path="plan-detailler" element={<PlanDetailler />}>
+            {/*chap 1 */}
             <Route path="prise-en-main" element={<PriseEnMain />}>
               <Route index element={<PremiereLayout />} />
               <Route path="definition-sig" element={<DefSig />} />
@@ -110,6 +111,7 @@ function App() {
               <Route path="espace-de-travail" element={<EspTrav />} />
             </Route>
 
+            {/*chap 2 */}
             <Route path="geodesie" element={<Geodesie />}>
               <Route index element={<DeuxiemeLayout />} />
               <Route path="introduction-geodesie" element={<IntroGeo />} />
@@ -118,6 +120,7 @@ function App() {
               <Route path="passer-un-systeme" element={<PasSys />} />
             </Route>
 
+            {/*chap 3 */}
             <Route path="recherche-et-ajout-de-donnees" element={<Recherche />}>
               <Route index element={<TroisiemeLayout />} />
               <Route
@@ -130,6 +133,7 @@ function App() {
               <Route path="qgis-osm" element={<QGISOSM />} />
             </Route>
 
+            {/*chap 4 */}
             <Route path="georeferencement" element={<Georeferencement />}>
               <Route index element={<QuatriemeLayout />} />
               <Route path="principe" element={<Principe />} />
@@ -140,6 +144,7 @@ function App() {
               <Route path="avec-couche-ref" element={<AvCoucheRef />} />
             </Route>
 
+            {/*chap 5 */}
             <Route path="numerisation" element={<Numerisation />}>
               <Route index element={<CinquiemeLayout />} />
               <Route path="creation-couche-vide" element={<CreatCouVide />} />
@@ -150,6 +155,7 @@ function App() {
               <Route path="quelque-top" element={<NotTop />} />
             </Route>
 
+            {/*chap 6 */}
             <Route path="requetes" element={<Requetes />}>
               <Route index element={<SixiemeLayout />} />
               <Route path="requete-attrib" element={<RequAttrib />} />
@@ -158,18 +164,21 @@ function App() {
               <Route path="requete-sql" element={<RequSQL />} />
             </Route>
 
+            {/*chap 7 */}
             <Route path="calcul-de-champs" element={<Calcul />}>
               <Route index element={<SeptiemeLayout />} />
               <Route path="creer-suppre-champ" element={<CreSupChamp />} />
               <Route path="calc-champ" element={<CalcChamp />} />
             </Route>
 
+            {/*chap 8 */}
             <Route path="jointures" element={<Jointure />}>
               <Route index element={<HuitiemeLayout />} />
               <Route path="jointure-attrib" element={<JoinAttrib />} />
               <Route path="jointure-spat" element={<JoinSpat />} />
             </Route>
 
+            {/*chap 9 */}
             <Route path="analyse-spatiale" element={<Analyse />}>
               <Route index element={<NeuviemeLayout />} />
               <Route path="operation-donnees-vect" element={<OperDoVect />} />
@@ -179,6 +188,7 @@ function App() {
               <Route path="dite-SQL" element={<DitSQL />} />
             </Route>
 
+            {/*chap 10 */}
             <Route
               path="representation-et-mis-en-page"
               element={<Representation />}
@@ -188,6 +198,7 @@ function App() {
               <Route path="mis-en-page" element={<MisEnPage />} />
             </Route>
 
+            {/*chap 11 */}
             <Route
               path="automatisation-des-traitements"
               element={<Automatisation />}

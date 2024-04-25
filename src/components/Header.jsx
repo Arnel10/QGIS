@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-import logoMadatlas from "../assets/images/logo-Madatlas.png";
-
 function Header() {
   return (
     <header
@@ -20,10 +18,15 @@ function Header() {
           >
             <NavLink to="/" className="flex items-center justify-center gap-4">
               <div className="bg-green-100 py-1 px-1 rounded-md cursor-pointer">
-                <img src={logoMadatlas} alt="madatlas" width={75} height={75} />
+                <img
+                  src="https://www.madatlas.mg/_next/static/media/logo-Madatlas.384d028f.png"
+                  alt="madatlas"
+                  width={75}
+                  height={75}
+                />
               </div>
               <div className="flex items-center gap-4">
-                Tuto-QGIS-madagascar
+                Tutoriel-QGIS-madagascar
               </div>
             </NavLink>
           </li>
