@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-import aide from "../../assets/images/aide.jpg";
 import Footer from "../../components/Footer";
 
 function Presentation() {
@@ -130,7 +129,10 @@ function Presentation() {
                   toggleImg ? "block" : "hidden"
                 } absolute top-2 right-0 mr-4 mt-4 z-10`}
               >
-                <img src={aide} alt="aide" />
+                <img
+                  src="https://emit-ecole-de-mit.github.io/tutoqgis_mada//illustrations/1_4_sauvegarder_projet_sous.jpg"
+                  alt="aide"
+                />
               </div>
             </div>
           </div>

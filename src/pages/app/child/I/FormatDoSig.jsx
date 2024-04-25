@@ -18,25 +18,25 @@ function FormatDoSig() {
             </a>
 
             <ul className="ml-8">
-              <li>
+              <li className="my-2">
                 <a href="#standard" className="lien">
                   Format Shapefile ou SHP : un "standard"
                 </a>
               </li>
 
-              <li>
+              <li className="my-2">
                 <a href="#gpkg" className="lien">
                   Format GPKG (GeoPackage)
                 </a>
               </li>
 
-              <li>
+              <li className="my-2">
                 <a href="#tab" className="lien">
                   Format TAB (MapInfo)
                 </a>
               </li>
 
-              <li>
+              <li className="my-2">
                 <a href="#autre" className="lien">
                   Et bien d'autres...
                 </a>

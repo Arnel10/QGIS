@@ -13,7 +13,9 @@ function OnziemeLayout() {
         une autre au moyen de l'outil découper, vous avez 30 couches à découper
         par une même autre.
       </p>
-      <p>Nous allons utiliser 3 méthodes différentes pour cela.</p>
+      <p className="paragraphe my-4">
+        Nous allons utiliser 3 méthodes différentes pour cela.
+      </p>
       <p className="paragraphe">Notions abordées :</p>
       <ul className="paragraphe ml-10">
         <li className="my-2">

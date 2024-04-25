@@ -45,8 +45,8 @@ function DeuxiemeLayout() {
 
       <div className="flex justify-end items-center py-5">
         <NavLink
-          className="btn-lien
-        "
+          className="btn-lien"
+          to="/app/plan-detailler/geodesie/introduction-geodesie"
         >
           Démarrer <ArrowRightOutlinedIcon sx={{ fontSize: 30 }} />
         </NavLink>
