@@ -79,7 +79,7 @@
   }
 
   .bg-img {
-    @apply flex flex-col justify-center items-center my-8
+    @apply flex justify-center items-center my-8 gap-5
      bg-slate-50 py-2 shadow-md shadow-green-200;
   }
 
