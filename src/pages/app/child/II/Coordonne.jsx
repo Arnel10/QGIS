@@ -98,7 +98,7 @@ function Coordonne() {
 
       <div className="mt-4">
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             Les coordonnées peuvent être exprimées en degrés, en mètres... et dans des référentiels différents. Un même point aura des coordonnées différentes selon le système de coordonnées utilisé.
           </p>
 
@@ -119,7 +119,7 @@ function Coordonne() {
             >
               Qu'est-ce qu'un système de coordonnées ?
             </h6>
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Un système de coordonnées est un système utilisé pour mesurer des coordonnées. Il peut être défini par un ellipsoïde. Un point sera alors localisé par ses coordonnées géographiques, exprimées par la latitude Ф, la longitude λ, et la hauteur ellipsoïdale h mesurée suivant la normale à l'ellipsoïde.
             </p>
           </div>
@@ -135,13 +135,13 @@ function Coordonne() {
 
         <div className="mt-4">
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Longitude et latitude sont des mesures d'angles et peuvent être exprimées en degrés, en grades ou en radians.
             </p>
           </div>
 
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2 italic">
+            <p className="paragraphe italic">
               Attention à ne pas confondre la hauteur ellipsoïdale, mesurée par rapport à l'ellipsoïde, et l'altitude normale mesurée par rapport au géoïde. Avant les années 1960, les altitudes étaient mesurées par rapport au niveau de la mer (altitude orthométrique).
             </p>
           </div>
@@ -156,52 +156,52 @@ function Coordonne() {
           >
             Quelques exemples de systèmes de coordonnées
           </h6>
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             Il existe de nombreux systèmes de coordonnées. Ils sont recensés par l'<span className="font-bold">EPSG</span>  (European Petroleum Survey Group) qui a attribué un code à chacun. Quelques exemples :
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             <span className="font-bold"> WGS84 (World Geodetic System 1984) :
             </span> <br />
             Système global initialement mis au point par le département de la défense des États Unis en 1984, mis à jour en 2004. Son exactitude est métrique, et son ellipsoïde se nomme IAG-GRS80.
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             <span className="font-bold">RGF93 (Réseau Géodésique Français 1993) :
             </span> <br />
             Système global obtenu par densification des points du réseau mondial associé ETRS89. Il s'agit du système officiel français. Ce système est facilement compatible avec le WGS84 par exemple.
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             <span className="font-bold">ED50 (European Datum 1950) :
             </span> <br />
             Système européen mis en place à la suite de la seconde guerre mondiale. Son ellipsoïde associé se nomme Hayford 1909.
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             <span className="font-bold">NTF (Nouvelle Triangulation de la France) :
             </span> <br />
             Système local issu de mesures réalisées depuis la fin du XIXème jusqu'en 1991. Son ellipsoïde associé est Clarke 1880 et son méridien d'origine Paris.
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             <i>
               En France, le système NTF a été abandonné au profit du système RGF93 qui présente une meilleure compatibilité avec les autres systèmes mondiaux. Il existe toutefois encore aujourd'hui de nombreuses données utilisant le système NTF.
             </i>
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             Certains systèmes seront adaptés à une zone précise, d'autre à la Terre entière. Plusieurs systèmes coexistent souvent pour une même zone, en raison par exemple de l'avancée des techniques ou de règlements.
           </p>
         </div>
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             <span className="font-bold">Un même point aura des coordonnées différentes selon le système utilisé pour les mesurer.
             </span> <br />
             Système européen mis en place à la suite de la seconde guerre mondiale. Son ellipsoïde associé se nomme Hayford 1909.
@@ -247,13 +247,13 @@ function Coordonne() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-700 italic py-2">
+          <p className="sous-titre-italic">
             Coordonnées de Paris mesurées dans différents systèmes.
           </p>
         </div>
 
         <div className="my-4">
-          <p className="tracking-[1px] text-gray-700 my-2">
+          <p className="paragraphe">
             On sait maintenant comment un point peut être défini par 3 coordonnées X, Y et Z. Comment représenter maintenant la Terre en 2 dimensions, pour en faire une carte par exemple ?
           </p>
         </div>
@@ -273,30 +273,30 @@ function Coordonne() {
             >
               Qu'est-ce qu'une projection ?
             </h6>
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold"> Le principe est de projeter des données 3D sur une surface plane.</span>Il y aura donc forcément des déformations : pensez à une peau d'orange qu'on écrase, et qui va se déchirer.
             </p>
           </div>
 
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               On appelle projection cartographique le système de correspondance entre les coordonnées géographiques (donc mesurées avec un système de référence) et les points du plan de projection.
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               De nombreuses méthodes de projections existent, chacune adaptée à un usage différent.
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Lorsqu'on utilise une projection, on parle de <span className="font-bold">coordonnées projetées</span> . Ces coordonnées sont par définition bidimensionnelles, et seront exprimées généralement <span className="font-bold">en unités métriques</span> .
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Une projection permet donc de représenter sur une surface plane une partie d'un modèle ellipsoïdal, mais aussi :
-              <ul className="ml-8 tracking-[1px] text-gray-700 my-2">
+              <ul className="ml-8 paragraphe">
                 <li className="my-1">
                   <FiberManualRecord sx={{ fontSize: 10 }} /> d'obtenir des valeurs métriques plus facilement exploitables que les valeurs angulaires de latitude et longitude
                 </li>
@@ -313,7 +313,7 @@ function Coordonne() {
             >
               Trois grands types de projections : cylindriques, coniques et azimutales
             </h6>
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Dans tous les cas, on va projeter la surface de la Terre sur une forme que l'on peut dérouler pour obtenir une surface plane : un cylindre, un cône ou un plan. On distingue ainsi <span className="font-bold"> les projections cylindriques, coniques et azimutales</span> . Il existe d'autres types de projections.
             </p>
           </div>
@@ -344,7 +344,7 @@ function Coordonne() {
               </th>
             </table>
 
-            <p className="text-sm text-gray-700 italic py-2">
+            <p className="sous-titre-italic">
               Projection cylindrique, conique et azimutale (Source : Traroth, Wikimedia Commons, licence GFDL).
             </p>
           </div>
@@ -356,9 +356,9 @@ function Coordonne() {
             >
               A chaque projection ses déformations
             </h6>
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               On peut aussi classer les projections selon leurs propriétés. On distingue ainsi :
-              <ul className="ml-8 tracking-[1px] text-gray-700 my-2 mt-2">
+              <ul className="ml-8 paragraphe mt-2">
                 <li className="my-1">
                   <FiberManualRecord sx={{ fontSize: 10 }} /> les projections <span className="font-bold">équivalentes</span> qui conservent les surfaces
                 </li>
@@ -372,12 +372,12 @@ function Coordonne() {
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Une projection ne peut être à la fois conforme et équivalente.
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Pour visualiser les déformations liées à une projection, on peut utiliser les indicatrices de Tissot. Ce sont des cercles identiques dessinés sur la Terre avant projection, qui se retrouveront donc déformés après projection. Si la projection déforme les angles, les cercles seront transformés en ellipses, si elle déforme les surfaces les cercles auront des surfaces différentes.
             </p>
           </div>
@@ -388,7 +388,7 @@ function Coordonne() {
             >
               Quelques exemples de projections
             </h6>
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Projection cylindrique conforme de Mercator</span> <br /> Cette projection conserve les angles, mais déforme de plus en plus les surfaces au fur et à mesure qu'on se rapproche des pôles. Elle est largement utilisée, notamment par Google.
             </p>
           </div>
@@ -398,12 +398,12 @@ function Coordonne() {
               alt="pôle-ard"
               width={500}
             />
-            <p className="text-sm text-gray-700 italic py-2">
+            <p className="sous-titre-italic">
               Projection de Mercator (source : Eric Gaba – utilisateur Wikimedia Commons : Sting, licence GFDL).
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Projection cylindrique équivalente de Peters
               </span> <br /> Cette projection permet une vision juste des proportions des surfaces des continents, mais ne garde pas les bonnes formes au contraire de la carte de Mercator. Elle permet notamment d'éviter de sous-dimensionner les pays du Sud.
             </p>
@@ -414,12 +414,12 @@ function Coordonne() {
               alt="pôle-ard"
               width={500}
             />
-            <p className="text-sm text-gray-700 italic py-2">
+            <p className="sous-titre-italic">
               Projection de Peters (source : Eric Gaba – utilisateur Wikimedia Commons : Sting, licence GFDL).
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Projection conique conforme de Lambert
               </span> <br />Contrairement aux projection de Mercator et Peters, cette projection est utilisée pour représenter seulement une partie du globe. Suivant ses paramètres, la zone couverte sera différente. L'illustration montre la projection <span className="font-bold">Lambert 93</span>, projection officielle française : les déformations sont minimisées pour la France.
             </p>
@@ -430,12 +430,12 @@ function Coordonne() {
               alt="pôle-ard"
               width={500}
             />
-            <p className="text-sm text-gray-700 italic py-2">
+            <p className="sous-titre-italic">
               Projection Lambert 93 (source : pôle ARD, adess, domaine public)
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Projection azimutale équidistante du pôle sud
               </span>
             </p>
@@ -446,12 +446,12 @@ function Coordonne() {
               alt="pôle-ard"
               width={500}
             />
-            <p className="text-sm text-gray-700 italic py-2">
+            <p className="sous-titre-italic">
               Projection azimutale équidistante pôle sud (source : pôle ARD, adess, domaine public)
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Projection Transverse Universelle de Mercator (UTM)
               </span> <br /> Il s'agit en fait d'une série de projections, le monde étant divisé en <a rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600 hover:underline" href="https://emit-ecole-de-mit.github.io/upload.wikimedia.org/wikipedia/commons/e/ed/Utm-zones.jpg" target="_blank">60 fuseaux</a>  de 6° de longitude. Une projection différente est utilisée pour chaque fuseau : le cylindre utilisé subit à chaque fois une rotation légèrement différente. Ceci permet de minimiser les déformations. La France est ainsi traversée par 3 fuseaux : 30, 31 et 32. Cette projection peut être associée au système WGS84, ou ED50 par exemple.
 
@@ -463,14 +463,14 @@ function Coordonne() {
               alt="pôle-ard"
               width={500}
             />
-            <p className="text-sm text-gray-700 italic py-2">
+            <p className="sous-titre-italic">
               Projection UTM : rotation d'un cylindre autour de la Terre.
               Par Javiersanp (Travail personnel) <a rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600 hover:underline" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">  [CC-BY-SA-3.0 ou GFDL]</a>, via Wikimedia Commons
 
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Un même point aura des coordonnées différentes selon la projection utilisée
               </span> (et le système associé à cette projection). Ci-dessous, les coordonnées de Paris mesurées dans différents sytèmes et projections.
             </p>
@@ -513,18 +513,18 @@ function Coordonne() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-sm text-gray-700 italic py-2">
+              <p className="sous-titre-italic">
                 Coordonnées de Paris mesurées dans différents systèmes et projections.
               </p>
             </div>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               Il existe d'autres types de projections, ni cylindriques, conformes ou azimutales.
             </p>
           </div>
           <div className="my-4">
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">En résumé, la projection parfaite n'existe pas</span> ; il faut essayer de faire au mieux pour l'usage auquel on destine la carte (à ce sujet, vous pouvez voir ce film). Par exemple, les cartes utilisées pour la navigation conservent généralement les angles et non les distances. L'échelle de la carte influe également sur le choix de la projection.
             </p>
           </div>
@@ -536,7 +536,7 @@ function Coordonne() {
             >
               Quelques exemples de projections
             </h6>
-            <p className="tracking-[1px] text-gray-700 my-2">
+            <p className="paragraphe">
               <span className="font-bold">Projection cylindrique conforme de Mercator</span> <br /> Cette projection conserve les angles, mais déforme de plus en plus les surfaces au fur et à mesure qu'on se rapproche des pôles. Elle est largement utilisée, notamment par Google.
             </p>
           </div>
@@ -550,7 +550,7 @@ function Coordonne() {
           </div>
           <div className="mt-4">
             <div className="my-4">
-              <p className="tracking-[1px] text-gray-700 my-2">
+              <p className="paragraphe">
                 On peut exprimer les coordonnées d'un point :
                 <ul className="ml-8 tracking-[1px] text-gray-700 my-2 mt-2">
                   <li className="my-1">
