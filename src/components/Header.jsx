@@ -22,7 +22,9 @@ function Header() {
               <div className="bg-green-100 py-1 px-1 rounded-md cursor-pointer">
                 <img src={logoMadatlas} alt="madatlas" width={75} height={75} />
               </div>
-              <div className="flex items-center gap-4">Tuto-QGIS</div>
+              <div className="flex items-center gap-4">
+                Tuto-QGIS-madagascar
+              </div>
             </NavLink>
           </li>
         </ul>

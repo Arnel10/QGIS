@@ -1,27 +1,32 @@
 import React from "react";
-import letg from "../assets/images/logo_letg.png";
-import qgis from "../assets/images/logo_qgis_3_22.png";
-import ouvrir from "../assets/images/logo_ouvrir.png";
-import passages from "../assets/images/logo_passages.png";
 
 function Sponsors() {
   return (
     <div className="w-[150px] mx-2 hidden md:block">
       <ul
         className="flex flex-col items-center 
-      justify-center gap-14 py-8 rounded-md"
+      justify-center gap-32 py-8 rounded-md"
       >
         <li>
-          <img src={letg} alt="letg" width={100} />
+          <img
+            src="https://emit-ecole-de-mit.github.io/tutoqgis_mada/illustrations/logo_UF.png"
+            alt="letg"
+            width={75}
+          />
         </li>
         <li>
-          <img src={ouvrir} alt="letg" width={150} />
+          <img
+            src="https://emit-ecole-de-mit.github.io/tutoqgis_mada/illustrations/logo_Madatlas.png"
+            alt="madatlas"
+            width={100}
+          />
         </li>
         <li>
-          <img src={passages} alt="letg" width={150} />
-        </li>
-        <li>
-          <img src={qgis} alt="letg" width={100} />
+          <img
+            src="https://www.qgis.org/fr/_static/images/trademark.png?t=23feb2018"
+            alt="qgis"
+            width={125}
+          />
         </li>
       </ul>
     </div>

@@ -181,7 +181,7 @@ function Presentation() {
           </div>
 
           <div className="flex items-center justify-center my-12">
-            <Link to="/app/plan-detailler" className="btn-lien">
+            <Link to="/app/plan-detailler/prise-en-main" className="btn-lien">
               C'est parti 👉
             </Link>
           </div>
