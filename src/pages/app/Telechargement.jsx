@@ -6,12 +6,7 @@ function Telechargement() {
   return (
     <section className="flex flex-col relative pt-8 pb-32 px-10">
       <div>
-        <h1
-          className="text-[30px] font-bold font-nunito 
-          uppercase tracking-[1.5px] text-green-500"
-        >
-          Téléchargement
-        </h1>
+        <h1 className="titre">Téléchargement</h1>
       </div>
       <div>
         <Outlet />

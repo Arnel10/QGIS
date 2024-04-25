@@ -5,6 +5,90 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Titre */
+  .titre {
+    @apply text-3xl font-bold font-nunito
+    uppercase tracking-[1.5px] text-green-500;
+  }
+
+  .titre-primary {
+    @apply tracking-[1.2px] text-2xl my-4 text-blue-500 font-normal;
+  }
+
+  .titre-secondary-italic {
+    @apply tracking-[1.2px] italic text-xl my-4 text-blue-500 font-normal;
+  }
+
+  .sous-titre {
+    @apply tracking-[1.2px] text-lg 
+    mb-4 text-blue-500 font-semibold;
+  }
+
+  .sous-titre-italic {
+    @apply tracking-[1.2px] text-lg 
+    mb-4 text-blue-500 font-normal italic;
+  }
+
+  /* Paragraphe */
+  .paragraphe {
+    @apply tracking-[1px] text-gray-700 my-4;
+  }
+
+  .paragraphe-bold {
+    @apply paragraphe text-bold;
+  }
+
+  /* Lien */
+  .lien {
+    @apply text-blue-500 hover:text-blue-600 hover:underline;
+  }
+
+  .btn-lien {
+    @apply flex items-center bg-green-500 px-4 py-2 font-nunito text-xl
+     text-white rounded-lg font-semibold border border-green-500 hover:bg-white 
+     hover:text-green-500 transition-all duration-200;
+  }
+
+  /* Navigation */
+  .navigation {
+    @apply text-gray-600  md:w-[330px] pt-5 h-[90vh] md:overflow-y-scroll md:block hidden pb-32;
+  }
+
+  .nav-text {
+    @apply text-xl font-semibold uppercase flex items-center tracking-[1.5px] font-nunito 
+    hover:text-green-500 transition-all duration-200;
+  }
+
+  .nav-text-secondary {
+    @apply text-lg font-semibold uppercase flex items-center tracking-[1.2px] 
+    font-nunito hover:text-green-500 transition-all duration-200;
+  }
+
+  .sous-nav {
+    @apply text-sm italic font-nunito tracking-[1px] hover:text-green-400;
+  }
+
+  /* Background */
+  .bg-style-g {
+    @apply bg-slate-50 border-l-[4px] border-l-green-500;
+  }
+
+  .bg-style-b {
+    @apply border-b-[1px] border-b-blue-500 mb-2;
+  }
+
+  .bg-img {
+    @apply flex flex-col justify-center items-center my-8
+     bg-slate-50 py-2 shadow-md shadow-green-200;
+  }
+
+  /* img titre */
+  .img-titre {
+    @apply text-xs paragraphe italic py-2 px-8;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
