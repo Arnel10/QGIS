@@ -12,7 +12,7 @@ import {
 
 function DefSig() {
   return (
-    <div>
+    <div className="relative">
       <h4 className="titre-primary">
         I.1 Qu'est-ce qu'un SIG ? (un peu de théorie...)
       </h4>
@@ -20,67 +20,52 @@ function DefSig() {
       <div>
         <ul className="text-blue-500">
           <li className="my-2">
-            <a
-              href="#definition"
-              className="hover:text-blue-600 hover:underline"
-            >
+            <a href="#definition" className="lien">
               Définitions
             </a>
             <ul className="ml-8">
               <li>
-                <a
-                  href="#def-geo"
-                  className="hover:text-blue-600 hover:underline"
-                >
+                <a href="#def-geo" className="lien">
                   Qu'est-ce que la géomatique ?
                 </a>
               </li>
               <li>
-                <a
-                  href="#def-sys"
-                  className="hover:text-blue-600 hover:underline"
-                >
+                <a href="#def-sys" className="lien">
                   Qu'est-ce qu'un Système d'Information Géographique ?
                 </a>
               </li>
             </ul>
           </li>
           <li className="my-2">
-            <a href="#donnees" className="hover:text-blue-600 hover:underline">
+            <a href="#donnees" className="lien">
               Les données des SIG
             </a>
             <ul className="ml-8">
               <li>
-                <a href="#org" className="hover:text-blue-600 hover:underline">
+                <a href="#org" className="lien">
                   Une organisation par couches
                 </a>
               </li>
               <li>
-                <a href="#type" className="hover:text-blue-600 hover:underline">
+                <a href="#type" className="lien">
                   Deux grands types de données : vecteur et raster
                 </a>
               </li>
               <li>
-                <a
-                  href="#donnees-vect"
-                  className="hover:text-blue-600 hover:underline"
-                >
+                <a href="#donnees-vect" className="lien">
                   Les données vecteur : à chaque géométrie ses attributs (et
                   vice-versa)
                 </a>
               </li>
               <li>
-                <a
-                  href="#metadonnées"
-                  className="hover:text-blue-600 hover:underline"
-                >
+                <a href="#metadonnées" className="lien">
                   Des données sur les données : les métadonnées
                 </a>
               </li>
             </ul>
           </li>
           <li className="my-2">
-            <a href="#role" className="hover:text-blue-600 hover:underline">
+            <a href="#role" className="lien">
               A quoi sert un SIG ?
             </a>
           </li>
@@ -115,20 +100,20 @@ function DefSig() {
             </p>
 
             <ul className="ml-8 paragraphe">
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> données
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> logiciels
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> matériel
                 informatique
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> savoir-faire
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> utilisateurs
               </li>
             </ul>
@@ -163,16 +148,16 @@ function DefSig() {
               alt="pôle-ard"
               width={500}
             />
-            <p className="img-titre">
-              Source : pôle ARD, adess (domaine public)
-            </p>
           </div>
+          <p className="img-titre flex items-center justify-center">
+            Source : pôle ARD, adess (domaine public)
+          </p>
 
           <div className="mt-10 bg-slate-50 shadow-md shadow-green-200 px-2 py-2 border-l-[5px] border-l-green-600">
             <p className="paragraphe flex items-center gap-5">
               <FolderOpenOutlined />
               {"  "} Lancez le logiciel QGIS. Ouvrez un projet :{" "}
-              <span className="text-blue-500 cursor-pointer hover:text-blue-600 hover:underline">
+              <span className="text-blue-500 cursor-pointer lien">
                 Menu Projet → Ouvrir
               </span>
             </p>
@@ -181,18 +166,18 @@ function DefSig() {
               src="https://emit-ecole-de-mit.github.io/tutoqgis_mada//illustrations/1_1_ouvrir_projet.jpg"
               alt="illustration"
             />
-            <p className="py-4 paragraphe">
+            <p className="my-2 paragraphe">
               Sélectionnez le projet{" "}
               <span className="text-blue-600 font-bold">senegal.qgz</span> situé
               dans
               <span className="font-bold">TutoQIS_01_PriseEnMain/projets</span>,
               cliquez sur <span className="font-bold">Ouvrir</span>.
             </p>
-            <p className="py-4 paragraphe">
+            <p className="my-2 paragraphe">
               Trois couches de données sont affichées dans QGIS, correspondant
               aux villes, rivières et régions du Sénégal.
             </p>
-            <p className="py-4 paragraphe">
+            <p className="my-2 paragraphe">
               Ces données proviennent de{" "}
               <Link
                 to="https://www.anat.sm/"
@@ -278,7 +263,7 @@ function DefSig() {
               aérienne, image satellite...
             </p>
 
-            <div className="flex flex-col justify-center items-center my-8 bg-slate-50 py-4 shadow-md shadow-green-200">
+            <div className="flex flex-col justify-center items-center my-8 bg-slate-50 my-2 shadow-md shadow-green-200">
               <img
                 src="https://emit-ecole-de-mit.github.io/tutoqgis_mada//illustrations/1_1_raster.jpg"
                 alt="raster"
@@ -308,7 +293,7 @@ function DefSig() {
               code, sa population...
             </p>
 
-            <div className="flex flex-col justify-center items-center my-8 bg-slate-50 py-4 shadow-md shadow-green-200">
+            <div className="flex flex-col justify-center items-center my-8 bg-slate-50 my-2 shadow-md shadow-green-200">
               <img
                 src="https://emit-ecole-de-mit.github.io/tutoqgis_mada//illustrations/1_1_spatial_attrib.jpg"
                 alt="donnes-spatiales"
@@ -331,7 +316,7 @@ function DefSig() {
                 <FolderSpecialOutlined />
                 <div>
                   {"  "} Ouvrez le projet{" "}
-                  <span className="text-blue-500 cursor-pointer hover:text-blue-600 hover:underline">
+                  <span className="text-blue-500 cursor-pointer lien">
                     depts_france.qgz{" "}
                   </span>
                   qui se trouve situé dans le dossier{" "}
@@ -506,44 +491,44 @@ function DefSig() {
             <div className="bg-style-b">
               <h5 className="sous-titre">Les données des SIG</h5>
             </div>
-            <p className="paragraphe py-4">
+            <p className="paragraphe my-2 py-2">
               Un SIG permet de saisir, représenter, interroger, et mettre à jour
               l’information géographique. Il peut notamment répondre aux
               questions suivantes :
             </p>
-            <ul className="ml-8 paragraphe py-4">
-              <li className="my-1">
+            <ul className="ml-8 paragraphe my-2 py-2">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> où :
                 localisation, étendue
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> quoi : quelles
                 informations
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> comment :
                 analyse spatiale
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> quand : analyse
                 temporelle
               </li>
-              <li className="my-1">
+              <li className="my-2">
                 <FiberManualRecordIcon sx={{ fontSize: 10 }} /> et si... :
                 modélisation
               </li>
             </ul>
-            <p className="paragraphe py-4">
+            <p className="paragraphe my-2 py-2">
               Les SIG sont utilisés aujourd'hui dans des domaines très variés :
               géographie, géologie, écologie, urbanisme, archéologie,
               économie...
             </p>
-            <p className="paragraphe py-4">
+            <p className="paragraphe my-2 py-2">
               On peut par exemple chercher à répondre à la question : "la taille
               des parcelles de vignes est-elle corrélée avec la pente et
               l'altitude de la parcelle, sur une zone donnée ?"
             </p>
-            <p className="paragraphe py-4">
+            <p className="paragraphe my-2 py-2">
               Les données nécessaires seront une couche contenant les parcelles
               de vignes, et un{" "}
               <Link
@@ -557,7 +542,7 @@ function DefSig() {
               de la zone d'étude. La résolution du MNT devra être suffisante en
               comparaison de la taille moyenne des parcelles.
             </p>
-            <p className="paragraphe py-4">
+            <p className="paragraphe my-2 py-2">
               Le SIG va permettre de croiser les parcelles et le MNT pour
               aboutir à une couche de parcelles où seront renseignées pour
               chaque parcelle par exemple sa taille, sa pente moyenne, son
@@ -567,7 +552,7 @@ function DefSig() {
             </p>
           </div>
 
-          <div className="flex justify-between items-center py-5">
+          <div className="flex justify-between items-center py-5 my-4 relative">
             <div></div>
             {/* <NavLink
               className="text-white text-xl flex items-center
@@ -579,16 +564,14 @@ function DefSig() {
             >
               <ArrowLeftOutlined sx={{ fontSize: 30 }} />
             </NavLink> */}
-            <NavLink
-              className="text-white text-xl flex items-center
-                transition-all duration-200 font-semibold font-nunito 
-               border border-green-500 px-2 py-1 
-                rounded-md bg-green-500 hover:bg-slate-50 hover:text-green-500
-     "
-              to="/app/plan-detailler/prise-en-main/definition-sig"
-            >
-              <ArrowRightOutlined sx={{ fontSize: 30 }} />
-            </NavLink>
+            <div>
+              <NavLink
+                className="btn-lien fixed bottom-5 z-20 right-48"
+                to="/app/plan-detailler/prise-en-main/manipulation-information-geographique"
+              >
+                Suivant <ArrowRightOutlined sx={{ fontSize: 30 }} />
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>
