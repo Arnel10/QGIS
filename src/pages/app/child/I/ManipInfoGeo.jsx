@@ -437,20 +437,17 @@ function ManipInfoGeo() {
             <img
               src="https://emit-ecole-de-mit.github.io/tutoqgis_mada/illustrations/1_2_style1.jpg"
               alt="style-1"
-              width={150}
-              className="cursor-pointer hover:border-green-600 hover:border transition-all duration-200"
+              className="w-[100px] sm:w-[150px] cursor-pointer hover:border-green-600 hover:border transition-all duration-200"
             />
             <img
               src="https://emit-ecole-de-mit.github.io/tutoqgis_mada/illustrations/1_2_style2.jpg"
               alt="style-2"
-              width={150}
-              className="cursor-pointer hover:border-green-600 hover:border transition-all duration-200"
+              className="w-[100px] sm:w-[150px] cursor-pointer hover:border-green-600 hover:border transition-all duration-200"
             />
             <img
               src="https://emit-ecole-de-mit.github.io/tutoqgis_mada/illustrations/1_2_style3.jpg"
               alt="style-3"
-              width={150}
-              className="cursor-pointer hover:border-green-600 hover:border transition-all duration-200"
+              className="w-[100px] sm:w-[150px] cursor-pointer hover:border-green-600 hover:border transition-all duration-200"
             />
           </div>
         </div>
@@ -788,16 +785,18 @@ function ManipInfoGeo() {
             className="btn-lien"
             to="/app/plan-detailler/prise-en-main/definition-sig"
           >
-            <ArrowLeftOutlined sx={{ fontSize: 30 }} /> Précédent
+            <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
+            <span className="hidden sm:block">Précédent</span>
           </NavLink>
         </div>
 
-        <div className="py-5 fixed bottom-0 z-20 right-48">
+        <div className="py-5 fixed bottom-0 z-20 sm:right-48 right-5">
           <NavLink
             className="btn-lien"
             to="/app/plan-detailler/prise-en-main/format-donnees-sig"
           >
-            Suivant <ArrowRightOutlined sx={{ fontSize: 30 }} />
+            <span className="hidden sm:block">Suivant</span>{" "}
+            <ArrowRightOutlined sx={{ fontSize: 30 }} />
           </NavLink>
         </div>
       </div>

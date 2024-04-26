@@ -452,16 +452,18 @@ function FormatDoSig() {
             className="btn-lien"
             to="/app/plan-detailler/prise-en-main/manipulation-information-geographique"
           >
-            <ArrowLeftOutlined sx={{ fontSize: 30 }} /> Précédent
+            <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
+            <span className="hidden sm:block">Précédent</span>
           </NavLink>
         </div>
 
-        <div className="py-5 fixed bottom-0 z-20 right-48">
+        <div className="py-5 fixed bottom-0 z-20 sm:right-48 right-5">
           <NavLink
             className="btn-lien"
             to="/app/plan-detailler/prise-en-main/espace-de-travail"
           >
-            Suivant <ArrowRightOutlined sx={{ fontSize: 30 }} />
+            <span className="hidden sm:block">Suivant</span>{" "}
+            <ArrowRightOutlined sx={{ fontSize: 30 }} />
           </NavLink>
         </div>
       </div>

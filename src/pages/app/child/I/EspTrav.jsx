@@ -161,8 +161,9 @@ function EspTrav() {
           <p className="my-4">
             2. Un exemple de chemin "en dur" :
             <span className="font-bold">
-              D:/Travail/SIG/TutoQGIS_01_PriseEnMain/donnees/LA_LOCALITE_P.gpkg
+              D:/Travail/SIG/TutoQGIS_01_PriseEnMain
             </span>{" "}
+            <span className="font-bold">/donnees/LA_LOCALITE_P.gpkg</span>
             Dans QGIS, par défaut{" "}
             <span className="font-bold">
               les chemins sont sauvegardés en relatif
@@ -204,16 +205,18 @@ function EspTrav() {
             className="btn-lien"
             to="/app/plan-detailler/prise-en-main/format-donnees-sig"
           >
-            <ArrowLeftOutlined sx={{ fontSize: 30 }} /> Précédent
+            <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
+            <span className="hidden sm:block">Précédent</span>
           </NavLink>
         </div>
 
-        <div className="py-5 fixed bottom-0 z-20 right-48">
+        <div className="py-5 fixed bottom-0 z-20 sm:right-48 right-5">
           <NavLink
             className="btn-lien"
             to="/app/plan-detailler/geodesie/introduction-geodesie"
           >
-            Chapitre II <ArrowRightOutlined sx={{ fontSize: 30 }} />
+            <span className="hidden sm:block">Chapitre II</span>{" "}
+            <ArrowRightOutlined sx={{ fontSize: 30 }} />
           </NavLink>
         </div>
       </div>

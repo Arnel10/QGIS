@@ -220,13 +220,13 @@ function DefSig() {
                 alt="exemple"
                 width={500}
               />
-              <p className="img-titre">
-                Exemple de données vecteur, l'exemple du Sénégal : régions sous
-                forme de polygones, rivières sous forme de lignes et villes sous
-                forme de points (source : Agence Nationale de l'Aménagement du
-                Territoire (ANAT) du Sénégal).
-              </p>
             </div>
+            <p className="img-titre">
+              Exemple de données vecteur, l'exemple du Sénégal : régions sous
+              forme de polygones, rivières sous forme de lignes et villes sous
+              forme de points (source : Agence Nationale de l'Aménagement du
+              Territoire (ANAT) du Sénégal).
+            </p>
 
             <p className="paragraphe py-2">
               Les <span className="font-bold">données vecteurs</span> se
@@ -566,10 +566,11 @@ function DefSig() {
             </NavLink> */}
             <div>
               <NavLink
-                className="btn-lien fixed bottom-5 z-20 right-48"
+                className="btn-lien fixed bottom-5 z-20 sm:right-48 right-5"
                 to="/app/plan-detailler/prise-en-main/manipulation-information-geographique"
               >
-                Suivant <ArrowRightOutlined sx={{ fontSize: 30 }} />
+                <span className="hidden sm:block">Suivant</span>{" "}
+                <ArrowRightOutlined sx={{ fontSize: 30 }} />
               </NavLink>
             </div>
           </div>
