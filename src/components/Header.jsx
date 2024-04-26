@@ -25,7 +25,7 @@ function Header() {
                   height={75}
                 />
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 uppercase text-sm sm:text-xl">
                 Tutoriel-QGIS-madagascar
               </div>
             </NavLink>
