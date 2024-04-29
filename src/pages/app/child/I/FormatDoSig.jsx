@@ -1,12 +1,16 @@
 import React from "react";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { Link, NavLink } from "react-router-dom";
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
+import {
+    ArrowDropUp,
+    ArrowLeftOutlined,
+    ArrowRightOutlined,
+} from "@mui/icons-material";
 
 function FormatDoSig() {
     return (
         <div>
-            <div>
+            <div id="top">
                 <h1 className="titre-primary">I.3 Formats de données SIG</h1>
             </div>
 
@@ -483,6 +487,12 @@ function FormatDoSig() {
                         <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
                         <span className="hidden lg:block">Précédent</span>
                     </NavLink>
+                </div>
+
+                <div className="fixed bottom-20 z-20 md:right-52 sm:right-12 right-5">
+                    <a href="#top" className="btn-lien rounded-full py-4 px-4">
+                        <ArrowDropUp />
+                    </a>
                 </div>
 
                 <div className="py-5 fixed bottom-0 z-20 md:right-52 sm:right-12 right-5">
