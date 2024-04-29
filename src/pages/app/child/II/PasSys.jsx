@@ -17,29 +17,29 @@ function PasSys() {
       <div>
         <ul className="text-blue-500">
           <li className="my-2">
-            <a href="#histoire" className="lien">
+            <a href="#modifscr" className="lien">
               Modifier le SCR du projet
             </a>
           </li>
           <li className="my-2">
-            <a href="#notion" className="lien">
+            <a href="#modifscrcouche" className="lien">
               Modifier le SCR d'une couche
             </a>
           </li>
           <li className="my-2">
-            <a href="#notion" className="lien">
+            <a href="#redefscrcouche" className="lien">
               Redéfinir le SCR d'une couche
             </a>
           </li>
           <li className="my-2">
-            <a href="#notion" className="lien">
+            <a href="#notconf" className="lien">
               Modifier et redéfinir le SCR : à ne pas confondre !
             </a>
           </li>
         </ul>
       </div>
 
-      <div id="definition" className="mt-8 mb-4">
+      <div id="modifscr" className="mt-8 mb-4">
         <div className="bg-style-b">
           <h5 className="sous-titre">Modifier le SCR du projet</h5>
         </div>
@@ -231,7 +231,7 @@ function PasSys() {
           le SCR de votre choix, à des fins cartographiques par exemple.
         </p>
       </div>
-      <div id="syst" className="mt-8 mb-4">
+      <div id="modifscrcouche" className="mt-8 mb-4">
         <div className="border border-b-blue-500 my-2 border-t-transparent border-l-transparent border-r-transparent">
           <h5 className="text-blue-500 font-nunito text-xl tracking-[1px]">
             Modifier le SCR d'une couche
@@ -526,7 +526,7 @@ function PasSys() {
           sur les données, ou pour éviter toute source de confusion en ayant
           uniquement des données dans le même SCR.
         </p>
-        <div id="syst" className="mt-8 mb-4">
+        <div id="redefscrcouche" className="mt-8 mb-4">
           <div className="border border-b-blue-500 my-2 border-t-transparent border-l-transparent border-r-transparent">
             <h5 className="text-blue-500 font-nunito text-xl tracking-[1px]">
               Redéfinir le SCR d'une couche
@@ -650,7 +650,7 @@ function PasSys() {
           </ul>
         </p>
       </div>
-      <div id="syst" className="mt-8 mb-4">
+      <div id="synotconfst" className="mt-8 mb-4">
         <div className="border border-b-blue-500 my-2 border-t-transparent border-l-transparent border-r-transparent">
           <h5 className="text-blue-500 font-nunito text-xl tracking-[1px]">
             Modifier et redéfinir le SCR : à ne pas confondre !
