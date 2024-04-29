@@ -1,28 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Sponsors from "../components/Sponsors";
 
 function AppLayout() {
-  return (
-    <div className="font-lato h-screen overflow-y-hidden">
-      <Header />
-      <div className="sm:flex sm:justify-between">
-        <div>
-          <Navbar />
-        </div>
+    const [isOpen, setIsOpen] = useState(false);
 
-        <div id="app-container" className="h-[90vh] overflow-y-scroll">
-          <Outlet />
-        </div>
+    function handleToggle() {
+        setIsOpen((prev) => !prev);
+    }
 
-        <div id="sponsors">
-          <Sponsors />
+    return (
+        <div className="font-lato h-screen overflow-y-hidden">
+            <Header isOpen={isOpen} handleToggle={handleToggle} />
+            {isOpen ? <Navbar /> : ""}
+            <div className="md:flex md:justify-between">
+                <div className="hidden lg:block">
+                    <Navbar />
+                </div>
+
+                <div id="app-container" className="h-[90vh] overflow-y-scroll">
+                    <Outlet />
+                </div>
+
+                <div id="sponsors">
+                    <Sponsors />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default AppLayout;

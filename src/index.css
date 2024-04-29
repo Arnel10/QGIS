@@ -6,172 +6,172 @@
 @tailwind utilities;
 
 @layer components {
-  /* Titre */
-  .titre {
-    @apply text-3xl font-bold font-nunito
+    /* Titre */
+    .titre {
+        @apply text-3xl font-bold font-nunito
     uppercase tracking-[1.5px] text-green-500;
-  }
+    }
 
-  .titre-primary {
-    @apply tracking-[1.2px] text-2xl my-4 text-blue-500 font-normal;
-  }
+    .titre-primary {
+        @apply tracking-[1.2px] text-2xl my-4 text-blue-500 font-normal;
+    }
 
-  .titre-secondary-italic {
-    @apply tracking-[1.2px] italic text-xl my-4 text-blue-500 font-normal;
-  }
+    .titre-secondary-italic {
+        @apply tracking-[1.2px] italic text-xl my-4 text-blue-500 font-normal;
+    }
 
-  .sous-titre {
-    @apply tracking-[1.2px] text-lg 
+    .sous-titre {
+        @apply tracking-[1.2px] text-lg 
     mb-4 text-blue-500 font-semibold;
-  }
+    }
 
-  .sous-titre-italic {
-    @apply tracking-[1.2px] text-lg 
+    .sous-titre-italic {
+        @apply tracking-[1.2px] text-lg 
     mb-4 text-blue-500 font-normal italic;
-  }
+    }
 
-  /* Paragraphe */
-  .paragraphe {
-    @apply tracking-[1px] text-gray-700 my-4;
-  }
+    /* Paragraphe */
+    .paragraphe {
+        @apply tracking-[1px] text-gray-700 my-4;
+    }
 
-  .paragraphe-bold {
-    @apply paragraphe text-bold;
-  }
+    .paragraphe-bold {
+        @apply paragraphe text-bold;
+    }
 
-  /* Lien */
-  .lien {
-    @apply text-blue-500 hover:text-blue-600 hover:underline text-sm sm:text-base;
-  }
+    /* Lien */
+    .lien {
+        @apply text-blue-500 hover:text-blue-600 hover:underline text-sm sm:text-base;
+    }
 
-  .btn-lien {
-    @apply flex items-center bg-green-500 px-4 py-2 font-nunito text-xl
+    .btn-lien {
+        @apply flex items-center bg-green-500 px-4 py-2 font-nunito text-xl
      text-white rounded-lg font-semibold border border-green-500 hover:bg-white 
      hover:text-green-500 transition-all duration-200;
-  }
+    }
 
-  /* Navigation */
-  .navigation {
-    @apply text-gray-600  md:w-[330px] pt-5 h-[90vh] md:overflow-y-scroll md:block hidden pb-32;
-  }
+    /* Navigation */
+    .navigation {
+        @apply text-gray-600  xl:w-[330px] lg:w-[250px] pt-5 h-[90vh] md:overflow-y-scroll pb-32;
+    }
 
-  .nav-text {
-    @apply text-xl font-semibold uppercase flex items-center tracking-[1.5px] font-nunito 
+    .nav-text {
+        @apply text-xl font-semibold uppercase flex items-center tracking-[1.5px] font-nunito 
     hover:text-green-500 transition-all duration-200;
-  }
+    }
 
-  .nav-text-secondary {
-    @apply text-lg font-semibold uppercase flex items-center tracking-[1.2px] 
+    .nav-text-secondary {
+        @apply text-lg font-semibold uppercase flex items-center tracking-[1.2px] 
     font-nunito hover:text-green-500 transition-all duration-200;
-  }
+    }
 
-  .sous-nav {
-    @apply text-sm italic font-nunito tracking-[1px] hover:text-green-400;
-  }
+    .sous-nav {
+        @apply text-sm italic font-nunito tracking-[1px] hover:text-green-400;
+    }
 
-  /* Background */
-  .bg-style-g {
-    @apply bg-slate-50 border-l-[4px] border-l-green-500;
-  }
+    /* Background */
+    .bg-style-g {
+        @apply bg-slate-50 border-l-[4px] border-l-green-500;
+    }
 
-  .bg-style-b {
-    @apply border-b-[1px] border-b-blue-500 mb-2;
-  }
+    .bg-style-b {
+        @apply border-b-[1px] border-b-blue-500 mb-2;
+    }
 
-  .bg-img {
-    @apply flex justify-center items-center my-8 gap-5
+    .bg-img {
+        @apply flex justify-center items-center my-8 gap-5
      bg-slate-50 py-2 shadow-md shadow-green-200;
-  }
+    }
 
-  /* img titre */
-  .img-titre {
-    @apply text-xs paragraphe italic py-2 px-8;
-  }
+    /* img titre */
+    .img-titre {
+        @apply text-xs paragraphe italic py-2 px-8;
+    }
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+    width: 4px;
+    height: 4px;
 }
 
 /* Poignée de la barre de défilement */
 ::-webkit-scrollbar-thumb {
-  background-color: #4ac06b;
-  border-radius: 4px;
+    background-color: #4ac06b;
+    border-radius: 4px;
 }
 
 /* Fond de la barre de défilement */
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 nav {
-  background-color: rgba(164, 213, 164, 0.1);
+    background-color: rgba(164, 213, 164, 0.1);
 }
 
 #home {
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(0, 160, 65, 0.8),
-      rgba(30, 230, 110, 0.8)
-    ),
-    url("https://st.depositphotos.com/1480688/1947/v/950/depositphotos_19476947-stock-illustration-dotted-world-map.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  background-attachment: fixed;
+    background-image: linear-gradient(
+            to bottom right,
+            rgba(0, 160, 65, 0.8),
+            rgba(30, 230, 110, 0.8)
+        ),
+        url("https://st.depositphotos.com/1480688/1947/v/950/depositphotos_19476947-stock-illustration-dotted-world-map.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
 }
 
 #app-container {
-  background-color: #ebfcee;
+    background-color: #ebfcee;
 }
 
 #sponsors {
-  background-color: rgba(164, 213, 164, 0.1);
+    background-color: rgba(164, 213, 164, 0.1);
 }
 
 header {
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(0, 160, 65, 0.8),
-      rgba(30, 230, 110, 0.8)
-    ),
-    url("https://st.depositphotos.com/1480688/1947/v/950/depositphotos_19476947-stock-illustration-dotted-world-map.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  background-attachment: fixed;
+    background-image: linear-gradient(
+            to bottom right,
+            rgba(0, 160, 65, 0.8),
+            rgba(30, 230, 110, 0.8)
+        ),
+        url("https://st.depositphotos.com/1480688/1947/v/950/depositphotos_19476947-stock-illustration-dotted-world-map.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
 }
 
 #logo-home {
-  animation: opacity 1s ease-in-out;
-  -webkit-animation: opacity 1s ease-in-out;
+    animation: opacity 1s ease-in-out;
+    -webkit-animation: opacity 1s ease-in-out;
 }
 
 #titre-home {
-  animation: opacity 1s ease-in-out;
-  -webkit-animation: opacity 1s ease-in-out;
+    animation: opacity 1s ease-in-out;
+    -webkit-animation: opacity 1s ease-in-out;
 }
 
 #btn-home {
-  animation: opacity 1s ease-in-out;
-  -webkit-animation: opacity 1s ease-in-out;
+    animation: opacity 1s ease-in-out;
+    -webkit-animation: opacity 1s ease-in-out;
 }
 
 #footer-home {
-  animation: opacity 1s ease-in-out;
-  -webkit-animation: opacity 1s ease-in-out;
+    animation: opacity 1s ease-in-out;
+    -webkit-animation: opacity 1s ease-in-out;
 }
 
 @keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
