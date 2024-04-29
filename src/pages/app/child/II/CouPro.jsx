@@ -22,12 +22,12 @@ function CouPro() {
             </a>
           </li>
           <li className="my-2">
-            <a href="#notion" className="lien">
+            <a href="#scrcouche" className="lien">
               SCR d'une couche
             </a>
           </li>
           <li className="my-2">
-            <a href="#notion" className="lien">
+            <a href="#provole" className="lien">
               Projection à la volée
             </a>
           </li>
@@ -210,7 +210,7 @@ function CouPro() {
         </p>
       </div>
 
-      <div id="projet" className="mt-8 mb-4">
+      <div id="scrcouche" className="mt-8 mb-4">
         <div className="bg-style-b">
           <h5 className="sous-titre">SCR d'une couche</h5>
         </div>
@@ -250,7 +250,7 @@ function CouPro() {
         </div>
       </div>
 
-      <div id="projet" className="mt-8 mb-4">
+      <div id="provole" className="mt-8 mb-4">
         <div className="bg-style-b">
           <h5 className="sous-titre">Projection à la volée</h5>
         </div>
