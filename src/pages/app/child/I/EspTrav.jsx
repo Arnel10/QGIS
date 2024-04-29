@@ -1,4 +1,5 @@
 import {
+    ArrowDropUp,
     ArrowLeftOutlined,
     ArrowRightOutlined,
     FileCopyOutlined,
@@ -11,7 +12,7 @@ function EspTrav() {
     return (
         <div className="relative">
             <div className="paragraphe">
-                <div>
+                <div id="top">
                     <h1 className="titre-primary">
                         I.4 Espace de travail (projet QGS)
                     </h1>
@@ -234,6 +235,12 @@ function EspTrav() {
                         <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
                         <span className="hidden lg:block">Précédent</span>
                     </NavLink>
+                </div>
+
+                <div className="fixed bottom-20 z-20 md:right-52 sm:right-12 right-5">
+                    <a href="#top" className="btn-lien rounded-full py-4 px-4">
+                        <ArrowDropUp />
+                    </a>
                 </div>
 
                 <div className="py-5 fixed bottom-0 z-20 md:right-52 sm:right-12 right-5">

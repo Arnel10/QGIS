@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import {
+    ArrowDropUp,
     ArrowRightOutlined,
     DragIndicatorOutlined,
     FileCopyOutlined,
@@ -13,7 +14,7 @@ import {
 function DefSig() {
     return (
         <div className="relative">
-            <h4 className="titre-primary">
+            <h4 className="titre-primary" id="top">
                 I.1 Qu'est-ce qu'un SIG ? (un peu de théorie...)
             </h4>
 
@@ -608,6 +609,14 @@ function DefSig() {
             >
               <ArrowLeftOutlined sx={{ fontSize: 30 }} />
             </NavLink> */}
+                        <div className="fixed bottom-20 z-20 md:right-52 sm:right-12 right-5">
+                            <a
+                                href="#top"
+                                className="btn-lien rounded-full py-4 px-4"
+                            >
+                                <ArrowDropUp />
+                            </a>
+                        </div>
                         <div>
                             <NavLink
                                 className="btn-lien fixed bottom-5 z-20 md:right-52 sm:right-12 right-5"
