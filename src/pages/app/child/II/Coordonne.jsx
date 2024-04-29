@@ -683,7 +683,7 @@ function Coordonne() {
           </div>
 
           <div className="my-4">
-            <h6 className="sous-titre-italic" id="def-geo">
+            <h6 className="sous-titre-italic" id="expro">
               Quelques exemples de projections
             </h6>
             <p className="paragraphe">

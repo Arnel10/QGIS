@@ -22,7 +22,7 @@ function IntroGeo() {
         </ul>
       </div>
 
-      <div id="definition" className="mt-8 mb-4">
+      <div id="histoire" className="mt-8 mb-4">
         <div className="bg-style-b">
           <h5 className="sous-titre">Bref historique</h5>
         </div>
