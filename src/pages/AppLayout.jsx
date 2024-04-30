@@ -14,7 +14,9 @@ function AppLayout() {
     return (
         <div className="font-lato h-screen overflow-y-hidden">
             <Header isOpen={isOpen} handleToggle={handleToggle} />
-            {isOpen ? <Navbar /> : ""}
+            <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
+                <Navbar />
+            </div>
             <div className="md:flex md:justify-between">
                 <div className="hidden lg:block">
                     <Navbar />

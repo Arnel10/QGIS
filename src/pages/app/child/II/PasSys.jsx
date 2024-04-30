@@ -783,7 +783,7 @@ function PasSys() {
 
                 <div>
                     <NavLink
-                        to="/app/plan-detailler/recherche-et-ajout-de-donnees/recherche-donne-SIG-internet"
+                        to="/app/plan-detailler/recherche-et-ajout-de-donnees"
                         className="btn-lien fixed bottom-5 z-20 md:right-52 sm:right-12 right-5"
                     >
                         Chap III <ArrowRightOutlined sx={{ fontSize: 30 }} />
