@@ -34,6 +34,7 @@ function Header({ isOpen, handleToggle }) {
                     </li>
                 </ul>
             </div>
+
             <div>
                 <ul className="flex gap-5 items-center">
                     <li
@@ -44,7 +45,7 @@ function Header({ isOpen, handleToggle }) {
                         {isOpen ? <Close /> : <MenuOutlined />}
                     </li>
                     <li
-                        className="cursor-pointer lg:hidden hover:bg-white hover:text-green-500 
+                        className="cursor-pointer hover:bg-white hover:text-green-500 
                                   flex items-center justify-center rounded-sm px-1 py-1"
                     >
                         <GitHubIcon />

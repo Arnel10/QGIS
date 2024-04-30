@@ -89,141 +89,248 @@ import ContUlMod from "./pages/app/child/XI/ContUlMod";
 import CompLanPy from "./pages/app/child/XI/CompLanPy";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="app" element={<AppLayout />}>
-          <Route index element={<Navigate replace to="presentation" />} />
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path="app" element={<AppLayout />}>
+                    <Route
+                        index
+                        element={<Navigate replace to="presentation" />}
+                    />
 
-          <Route path="presentation" element={<Presentation />} />
+                    <Route path="presentation" element={<Presentation />} />
 
-          <Route path="plan-detailler" element={<PlanDetailler />}>
-            {/*chap 1 */}
-            <Route path="prise-en-main" element={<PriseEnMain />}>
-              <Route index element={<PremiereLayout />} />
-              <Route path="definition-sig" element={<DefSig />} />
-              <Route
-                path="manipulation-information-geographique"
-                element={<ManipInfoGeo />}
-              />
-              <Route path="format-donnees-sig" element={<FormatDoSig />} />
-              <Route path="espace-de-travail" element={<EspTrav />} />
-            </Route>
+                    <Route path="plan-detailler" element={<PlanDetailler />}>
+                        {/*chap 1 */}
+                        <Route path="prise-en-main" element={<PriseEnMain />}>
+                            <Route index element={<PremiereLayout />} />
+                            <Route path="definition-sig" element={<DefSig />} />
+                            <Route
+                                path="manipulation-information-geographique"
+                                element={<ManipInfoGeo />}
+                            />
+                            <Route
+                                path="format-donnees-sig"
+                                element={<FormatDoSig />}
+                            />
+                            <Route
+                                path="espace-de-travail"
+                                element={<EspTrav />}
+                            />
+                        </Route>
 
-            {/*chap 2 */}
-            <Route path="geodesie" element={<Geodesie />}>
-              <Route index element={<DeuxiemeLayout />} />
-              <Route path="introduction-geodesie" element={<IntroGeo />} />
-              <Route path="coordonnes-systeme" element={<Coordonne />} />
-              <Route path="couche-et-projet" element={<CouPro />} />
-              <Route path="passer-un-systeme" element={<PasSys />} />
-            </Route>
+                        {/*chap 2 */}
+                        <Route path="geodesie" element={<Geodesie />}>
+                            <Route index element={<DeuxiemeLayout />} />
+                            <Route
+                                path="introduction-geodesie"
+                                element={<IntroGeo />}
+                            />
+                            <Route
+                                path="coordonnes-systeme"
+                                element={<Coordonne />}
+                            />
+                            <Route
+                                path="couche-et-projet"
+                                element={<CouPro />}
+                            />
+                            <Route
+                                path="passer-un-systeme"
+                                element={<PasSys />}
+                            />
+                        </Route>
 
-            {/*chap 3 */}
-            <Route path="recherche-et-ajout-de-donnees" element={<Recherche />}>
-              <Route index element={<TroisiemeLayout />} />
-              <Route
-                path="recherche-donne-SIG-internet"
-                element={<RechDonSi />}
-              />
-              <Route path="ajout-donnees-via-flux" element={<AjoutFluDo />} />
-              <Route path="ajout-donnees-ponctuel" element={<AjoutDonPon />} />
-              <Route path="ajout-fond-de-carte" element={<AjFonCart />} />
-              <Route path="qgis-osm" element={<QGISOSM />} />
-            </Route>
+                        {/*chap 3 */}
+                        <Route
+                            path="recherche-et-ajout-de-donnees"
+                            element={<Recherche />}
+                        >
+                            <Route index element={<TroisiemeLayout />} />
+                            <Route
+                                path="recherche-donne-SIG-internet"
+                                element={<RechDonSi />}
+                            />
+                            <Route
+                                path="ajout-donnees-via-flux"
+                                element={<AjoutFluDo />}
+                            />
+                            <Route
+                                path="ajout-donnees-ponctuel"
+                                element={<AjoutDonPon />}
+                            />
+                            <Route
+                                path="ajout-fond-de-carte"
+                                element={<AjFonCart />}
+                            />
+                            <Route path="qgis-osm" element={<QGISOSM />} />
+                        </Route>
 
-            {/*chap 4 */}
-            <Route path="georeferencement" element={<Georeferencement />}>
-              <Route index element={<QuatriemeLayout />} />
-              <Route path="principe" element={<Principe />} />
-              <Route path="preliminaire" element={<Preliminaire />} />
-              <Route path="avec-caroyage" element={<CarroyageTxt />} />
-              <Route path="param-georef" element={<ParamGeoef />} />
-              <Route path="lancer-geo" element={<LanceGeoref />} />
-              <Route path="avec-couche-ref" element={<AvCoucheRef />} />
-            </Route>
+                        {/*chap 4 */}
+                        <Route
+                            path="georeferencement"
+                            element={<Georeferencement />}
+                        >
+                            <Route index element={<QuatriemeLayout />} />
+                            <Route path="principe" element={<Principe />} />
+                            <Route
+                                path="preliminaire"
+                                element={<Preliminaire />}
+                            />
+                            <Route
+                                path="avec-caroyage"
+                                element={<CarroyageTxt />}
+                            />
+                            <Route
+                                path="param-georef"
+                                element={<ParamGeoef />}
+                            />
+                            <Route
+                                path="lancer-geo"
+                                element={<LanceGeoref />}
+                            />
+                            <Route
+                                path="avec-couche-ref"
+                                element={<AvCoucheRef />}
+                            />
+                        </Route>
 
-            {/*chap 5 */}
-            <Route path="numerisation" element={<Numerisation />}>
-              <Route index element={<CinquiemeLayout />} />
-              <Route path="creation-couche-vide" element={<CreatCouVide />} />
-              <Route path="ajout-point" element={<AjoutPoint />} />
-              <Route path="donnees-attrib" element={<DonAttrib />} />
-              <Route path="numeriser-ligne" element={<NumLign />} />
-              <Route path="numeriser-pol" element={<NumPol />} />
-              <Route path="quelque-top" element={<NotTop />} />
-            </Route>
+                        {/*chap 5 */}
+                        <Route path="numerisation" element={<Numerisation />}>
+                            <Route index element={<CinquiemeLayout />} />
+                            <Route
+                                path="creation-couche-vide"
+                                element={<CreatCouVide />}
+                            />
+                            <Route
+                                path="ajout-point"
+                                element={<AjoutPoint />}
+                            />
+                            <Route
+                                path="donnees-attrib"
+                                element={<DonAttrib />}
+                            />
+                            <Route
+                                path="numeriser-ligne"
+                                element={<NumLign />}
+                            />
+                            <Route path="numeriser-pol" element={<NumPol />} />
+                            <Route path="quelque-top" element={<NotTop />} />
+                        </Route>
 
-            {/*chap 6 */}
-            <Route path="requetes" element={<Requetes />}>
-              <Route index element={<SixiemeLayout />} />
-              <Route path="requete-attrib" element={<RequAttrib />} />
-              <Route path="requete-spati" element={<RequSpat />} />
-              <Route path="combiner-requete" element={<CombRequ />} />
-              <Route path="requete-sql" element={<RequSQL />} />
-            </Route>
+                        {/*chap 6 */}
+                        <Route path="requetes" element={<Requetes />}>
+                            <Route index element={<SixiemeLayout />} />
+                            <Route
+                                path="requete-attrib"
+                                element={<RequAttrib />}
+                            />
+                            <Route
+                                path="requete-spati"
+                                element={<RequSpat />}
+                            />
+                            <Route
+                                path="combiner-requete"
+                                element={<CombRequ />}
+                            />
+                            <Route path="requete-sql" element={<RequSQL />} />
+                        </Route>
 
-            {/*chap 7 */}
-            <Route path="calcul-de-champs" element={<Calcul />}>
-              <Route index element={<SeptiemeLayout />} />
-              <Route path="creer-suppre-champ" element={<CreSupChamp />} />
-              <Route path="calc-champ" element={<CalcChamp />} />
-            </Route>
+                        {/*chap 7 */}
+                        <Route path="calcul-de-champs" element={<Calcul />}>
+                            <Route index element={<SeptiemeLayout />} />
+                            <Route
+                                path="creer-suppre-champ"
+                                element={<CreSupChamp />}
+                            />
+                            <Route path="calc-champ" element={<CalcChamp />} />
+                        </Route>
 
-            {/*chap 8 */}
-            <Route path="jointures" element={<Jointure />}>
-              <Route index element={<HuitiemeLayout />} />
-              <Route path="jointure-attrib" element={<JoinAttrib />} />
-              <Route path="jointure-spat" element={<JoinSpat />} />
-            </Route>
+                        {/*chap 8 */}
+                        <Route path="jointures" element={<Jointure />}>
+                            <Route index element={<HuitiemeLayout />} />
+                            <Route
+                                path="jointure-attrib"
+                                element={<JoinAttrib />}
+                            />
+                            <Route
+                                path="jointure-spat"
+                                element={<JoinSpat />}
+                            />
+                        </Route>
 
-            {/*chap 9 */}
-            <Route path="analyse-spatiale" element={<Analyse />}>
-              <Route index element={<NeuviemeLayout />} />
-              <Route path="operation-donnees-vect" element={<OperDoVect />} />
-              <Route path="operation-donnees-rast" element={<OperDoRes />} />
-              <Route path="croiser-vect-rast" element={<CroisVecRes />} />
-              <Route path="creer-maillage" element={<CreMaille />} />
-              <Route path="dite-SQL" element={<DitSQL />} />
-            </Route>
+                        {/*chap 9 */}
+                        <Route path="analyse-spatiale" element={<Analyse />}>
+                            <Route index element={<NeuviemeLayout />} />
+                            <Route
+                                path="operation-donnees-vect"
+                                element={<OperDoVect />}
+                            />
+                            <Route
+                                path="operation-donnees-rast"
+                                element={<OperDoRes />}
+                            />
+                            <Route
+                                path="croiser-vect-rast"
+                                element={<CroisVecRes />}
+                            />
+                            <Route
+                                path="creer-maillage"
+                                element={<CreMaille />}
+                            />
+                            <Route path="dite-SQL" element={<DitSQL />} />
+                        </Route>
 
-            {/*chap 10 */}
-            <Route
-              path="representation-et-mis-en-page"
-              element={<Representation />}
-            >
-              <Route index element={<DixiemeLayout />} />
-              <Route path="representation" element={<Repres />} />
-              <Route path="mis-en-page" element={<MisEnPage />} />
-            </Route>
+                        {/*chap 10 */}
+                        <Route
+                            path="representation-et-mis-en-page"
+                            element={<Representation />}
+                        >
+                            <Route index element={<DixiemeLayout />} />
+                            <Route path="representation" element={<Repres />} />
+                            <Route path="mis-en-page" element={<MisEnPage />} />
+                        </Route>
 
-            {/*chap 11 */}
-            <Route
-              path="automatisation-des-traitements"
-              element={<Automatisation />}
-            >
-              <Route index element={<OnziemeLayout />} />
-              <Route path="traitement-de-base" element={<TraitPage />} />
-              <Route path="execution-lot" element={<Execlot />} />
-              <Route path="construire-utilise-modele" element={<ContUlMod />} />
-              <Route path="comprendre-lancer-python" element={<CompLanPy />} />
-            </Route>
-          </Route>
+                        {/*chap 11 */}
+                        <Route
+                            path="automatisation-des-traitements"
+                            element={<Automatisation />}
+                        >
+                            <Route index element={<OnziemeLayout />} />
+                            <Route
+                                path="traitement-de-base"
+                                element={<TraitPage />}
+                            />
+                            <Route path="execution-lot" element={<Execlot />} />
+                            <Route
+                                path="construire-utilise-modele"
+                                element={<ContUlMod />}
+                            />
+                            <Route
+                                path="comprendre-lancer-python"
+                                element={<CompLanPy />}
+                            />
+                        </Route>
+                    </Route>
 
-          <Route path="telechargement" element={<Telechargement />}>
-            <Route
-              index
-              element={<Navigate replace to="telechargement-donnees" />}
-            />
-            <Route path="telechargement-donnees" element={<Donnees />} />
-            <Route path="telechargement-pdf" element={<PDF />} />
-          </Route>
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  );
+                    <Route path="telechargement" element={<Telechargement />}>
+                        <Route
+                            index
+                            element={
+                                <Navigate replace to="telechargement-donnees" />
+                            }
+                        />
+                        <Route
+                            path="telechargement-donnees"
+                            element={<Donnees />}
+                        />
+                        <Route path="telechargement-pdf" element={<PDF />} />
+                    </Route>
+                </Route>
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

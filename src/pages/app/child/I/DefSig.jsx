@@ -289,7 +289,7 @@ function DefSig() {
                             scannée, photographie aérienne, image satellite...
                         </p>
 
-                        <div className="flex flex-col justify-center items-center my-8 bg-slate-50 my-2 shadow-md shadow-green-200">
+                        <div className="flex flex-col justify-center items-center my-8 bg-slate-50 shadow-md shadow-green-200">
                             <img
                                 src="https://emit-ecole-de-mit.github.io/tutoqgis_mada//illustrations/1_1_raster.jpg"
                                 alt="raster"
@@ -325,7 +325,7 @@ function DefSig() {
                             population...
                         </p>
 
-                        <div className="flex flex-col justify-center items-center my-8 bg-slate-50 my-2 shadow-md shadow-green-200">
+                        <div className="flex flex-col justify-center items-center my-8 bg-slate-50 shadow-md shadow-green-200">
                             <img
                                 src="https://emit-ecole-de-mit.github.io/tutoqgis_mada//illustrations/1_1_spatial_attrib.jpg"
                                 alt="donnes-spatiales"
@@ -599,16 +599,6 @@ function DefSig() {
 
                     <div className="flex justify-between items-center py-5 my-4 relative">
                         <div></div>
-                        {/* <NavLink
-              className="text-white text-xl flex items-center
-                transition-all duration-200 font-semibold font-nunito 
-               border border-green-500 px-2 py-1 
-                rounded-md bg-green-500 hover:bg-slate-50 hover:text-green-500
-     "
-              to="/app/plan-detailler/prise-en-main/definition-sig"
-            >
-              <ArrowLeftOutlined sx={{ fontSize: 30 }} />
-            </NavLink> */}
                         <div className="fixed bottom-20 z-20 md:right-52 sm:right-12 right-5">
                             <a
                                 href="#top"
