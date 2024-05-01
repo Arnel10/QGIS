@@ -21,8 +21,8 @@
     }
 
     .sous-titre {
-        @apply tracking-[1.2px] text-lg 
-    mb-4 text-blue-500 font-semibold;
+        @apply tracking-[1.2px] text-xl 
+        mb-4 text-blue-500 font-semibold;
     }
 
     .sous-titre-italic {
@@ -52,7 +52,7 @@
 
     /* Navigation */
     .navigation {
-        @apply text-gray-600  xl:w-[330px] lg:w-[250px] pt-5 h-[90vh] md:overflow-y-scroll pb-32;
+        @apply text-gray-600  xl:w-[330px] lg:w-[250px] pt-5 h-[90vh] overflow-y-scroll pb-32;
     }
 
     .nav-text {
