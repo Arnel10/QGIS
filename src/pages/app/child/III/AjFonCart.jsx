@@ -1,10 +1,16 @@
-import { FiberManualRecord } from "@mui/icons-material";
+import {
+    ArrowDropUp,
+    ArrowLeftOutlined,
+    ArrowRightOutlined,
+    FiberManualRecord,
+} from "@mui/icons-material";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function AjFonCart() {
     return (
         <div>
-            <h4 className="titre-primary">
+            <h4 className="titre-primary" id="top">
                 III.4 Ajouter un fonds de carte en ligne
             </h4>
 
@@ -403,6 +409,34 @@ function AjFonCart() {
                             provoquer des problèmes d'affichage.
                         </p>
                     </div>
+                </div>
+            </div>
+
+            <div className="flex justify-between items-center relative">
+                <div className="py-5 fixed bottom-0 z-20">
+                    <NavLink
+                        className="btn-lien"
+                        to="/app/plan-detailler/recherche-et-ajout-de-donnees/ajout-donnees-ponctuel"
+                    >
+                        <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
+                        <span className="hidden lg:block">Précédent</span>
+                    </NavLink>
+                </div>
+
+                <div className="fixed bottom-20 z-20 md:right-52 sm:right-12 right-5">
+                    <a href="#top" className="btn-lien rounded-full py-4 px-4">
+                        <ArrowDropUp />
+                    </a>
+                </div>
+
+                <div>
+                    <NavLink
+                        to="/app/plan-detailler/recherche-et-ajout-de-donnees/qgis-osm"
+                        className="btn-lien fixed bottom-5 z-20 md:right-52 sm:right-12 right-5"
+                    >
+                        <span className="hidden lg:block">Suivant</span>{" "}
+                        <ArrowRightOutlined sx={{ fontSize: 30 }} />
+                    </NavLink>
                 </div>
             </div>
         </div>
