@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 function Coordonne() {
     return (
-        <div className="top">
+        <div id="top">
             <h4 className="titre-primary">
                 II.2 Des coordonnées, oui mais dans quel système ?
             </h4>
