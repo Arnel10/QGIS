@@ -1,29 +1,25 @@
-import {
-    ArrowDropUp,
-    ArrowLeftOutlined,
-    ArrowRightOutlined,
-} from "@mui/icons-material";
+import { ArrowDropUp, ArrowRightOutlined } from "@mui/icons-material";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function DitSQL() {
+function TraitBase() {
     return (
         <div className="relative paragraphe">
             <div className="my-4">
-                <h1 className="text-primary" id="top">
-                    9-5
+                <h1 className="titre-primary" id="top">
+                    11-1
                 </h1>
             </div>
 
             <div className="flex justify-between items-center relative">
                 <div className="py-5 fixed bottom-0 z-20">
-                    <NavLink
+                    {/* <NavLink
                         className="btn-lien"
-                        to="/app/plan-detailler/analyse-spatiale/creer-maillage"
+                        to="/app/plan-detailler/geodesie/introduction-geodesie"
                     >
                         <ArrowLeftOutlined sx={{ fontSize: 30 }} />{" "}
                         <span className="hidden lg:block">Précédent</span>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
                 <div className="fixed bottom-20 z-20 md:right-52 sm:right-12 right-5">
@@ -34,10 +30,10 @@ function DitSQL() {
 
                 <div>
                     <NavLink
-                        to="/app/plan-detailler/representation-et-mis-en-page"
+                        to="/app/plan-detailler/automatisation-des-traitements/execution-lot"
                         className="btn-lien fixed bottom-5 z-20 md:right-52 sm:right-12 right-5"
                     >
-                        <span className="hidden lg:block">Chap X</span>{" "}
+                        <span className="hidden lg:block">Suivant</span>{" "}
                         <ArrowRightOutlined sx={{ fontSize: 30 }} />
                     </NavLink>
                 </div>
@@ -46,4 +42,4 @@ function DitSQL() {
     );
 }
 
-export default DitSQL;
+export default TraitBase;

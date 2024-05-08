@@ -83,10 +83,10 @@ import Repres from "./pages/app/child/X/Repres";
 import MisEnPage from "./pages/app/child/X/MisEnPage";
 
 import OnziemeLayout from "./pages/app/child/XI/OnziemeLayout";
-import TraitPage from "./pages/app/child/XI/TraitPage";
 import Execlot from "./pages/app/child/XI/Execlot";
 import ContUlMod from "./pages/app/child/XI/ContUlMod";
 import CompLanPy from "./pages/app/child/XI/CompLanPy";
+import TraitBase from "./pages/app/child/XI/TraitBase";
 
 function App() {
     return (
@@ -299,7 +299,7 @@ function App() {
                             <Route index element={<OnziemeLayout />} />
                             <Route
                                 path="traitement-de-base"
-                                element={<TraitPage />}
+                                element={<TraitBase />}
                             />
                             <Route path="execution-lot" element={<Execlot />} />
                             <Route

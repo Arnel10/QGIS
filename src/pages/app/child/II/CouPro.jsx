@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 function CouPro() {
     return (
-        <div id="top">
+        <div id="top" className="paragraphe">
             <h4 className="titre-primary">
                 II.3 Couches et projets : à chacun son système
             </h4>
