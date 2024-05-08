@@ -446,7 +446,7 @@ function AvCoucheRef() {
                 <div className="py-5 fixed bottom-0 z-20 md:right-52 sm:right-12 right-5">
                     <NavLink
                         className="btn-lien"
-                        to="/app/plan-detailler/numerisation/creation-couche-vide"
+                        to="/app/plan-detailler/numerisation"
                     >
                         <span className="hidden lg:block">Chap V</span>{" "}
                         <ArrowRightOutlined sx={{ fontSize: 30 }} />
