@@ -41,7 +41,7 @@
 
     /* Lien */
     .lien {
-        @apply text-blue-500 hover:text-blue-600 hover:underline text-sm sm:text-base;
+        @apply text-blue-500 hover:text-blue-600 hover:underline text-sm sm:text-base cursor-pointer;
     }
 
     .btn-lien {
