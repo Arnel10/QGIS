@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Sponsors from "../components/Sponsors";
+import MiniNav from "../components/MiniNav";
 
 function AppLayout() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ function AppLayout() {
         <div className="font-lato h-screen overflow-y-hidden">
             <Header isOpen={isOpen} handleToggle={handleToggle} />
             <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
-                <Navbar />
+                <MiniNav handleToggle={handleToggle} setIsOpen={setIsOpen} />
             </div>
             <div className="md:flex md:justify-between">
                 <div className="hidden lg:block">
