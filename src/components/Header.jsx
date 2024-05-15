@@ -48,7 +48,13 @@ function Header({ isOpen, handleToggle }) {
                         className="cursor-pointer hover:bg-white hover:text-green-500 
                                   flex items-center justify-center rounded-sm px-1 py-1"
                     >
-                        <GitHubIcon />
+                        <a
+                            href="https://emit-ecole-de-mit.github.io/tutoqgis_mada"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <GitHubIcon />
+                        </a>
                     </li>
                 </ul>
             </div>
